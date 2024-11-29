@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Artist = () => {
   const [artists, setArtists] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate(); // ensure this hook is imported
 
   const API_URL = 'https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=bollywood&type=artist';
 
@@ -38,10 +36,11 @@ const Artist = () => {
         {artists.map((artist) => (
           <div
             key={artist.id}
-            className="flex-shrink-0 text-center cursor-pointer"
+            className="flex-shrink-0 text-center"
+            // Removed the onClick navigation to prevent routing
             onClick={() => {
-              console.log(`Navigating to /artist/${artist.id}`); // Debug line
-              navigate(`/artist/${artist.id}`);
+              // You can add custom functionality here for what should happen when an artist is clicked
+              console.log(`Artist clicked: ${artist.name}`); // Debug line
             }}
           >
             <img
@@ -57,4 +56,4 @@ const Artist = () => {
   );
 };
 
-export default Artist; 
+export default Artist;

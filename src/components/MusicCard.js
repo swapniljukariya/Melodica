@@ -1,20 +1,33 @@
-// src/components/MusicCard.js
 import React, { useState } from 'react';
-import { useAppContext } from '../Context/Globalstate';
+import { useAppContext } from '../Context/Globalstate'; // Import useAppContext
+import { FaRegHeart, FaHeart } from 'react-icons/fa'; // Import the heart icons
 
-const MusicCard = ({ track, onLikeClick, isLiked }) => {
+const MusicCard = ({ track }) => {
   const [selectedPlaylist, setSelectedPlaylist] = useState('');
-  const { playlists, addToPlaylist } = useAppContext();
+  const { playlists, addToPlaylist, addToLikedTracks, removeFromLikedTracks, likedTracks } = useAppContext();
 
-  // Function to handle adding track to the selected playlist
+  // Check if the track is already liked
+  const isLiked = likedTracks.some((likedTrack) => likedTrack.id === track.id);
+
+  // Handle Like/Unlike functionality
+  const handleLikeClick = () => {
+    if (isLiked) {
+      removeFromLikedTracks(track); // Unlike the track
+    } else {
+      addToLikedTracks(track); // Like the track
+    }
+  };
+
+  // Handle Add to Playlist functionality
   const handleAddToPlaylist = () => {
     if (selectedPlaylist) {
-      addToPlaylist(selectedPlaylist, track); // Add track to selected playlist
+      addToPlaylist(selectedPlaylist, track);
       alert(`Added "${track.name}" to ${selectedPlaylist} playlist.`);
     } else {
       alert('Please select a playlist.');
     }
   };
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
       {/* Album Image */}
@@ -39,18 +52,16 @@ const MusicCard = ({ track, onLikeClick, isLiked }) => {
         <div className="flex justify-between items-center mt-4">
           {/* Liked Button */}
           <button
-            onClick={() => onLikeClick(track)} // Handle like/unlike
-            className={`px-4 py-2 rounded-lg text-white ${
-              isLiked ? 'bg-red-500' : 'bg-gray-300 hover:bg-gray-400'
-            }`}
+            onClick={handleLikeClick}
+            className={`px-4 py-2 rounded-lg text-white ${isLiked ? 'bg-red-500' : 'bg-gray-300 hover:bg-gray-400'}`}
           >
-            {isLiked ? 'Liked' : 'Like'}
+            {isLiked ? <FaHeart /> : <FaRegHeart />}
           </button>
 
           {/* Add to Playlist Button */}
           <button
             onClick={handleAddToPlaylist}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-blue-600"
           >
             Add to Playlist
           </button>
@@ -61,7 +72,7 @@ const MusicCard = ({ track, onLikeClick, isLiked }) => {
           <select
             value={selectedPlaylist}
             onChange={(e) => setSelectedPlaylist(e.target.value)}
-            className="w-full p-2 border rounded-lg"
+            className="w-full bg-gray-200 p-2 border rounded-lg"
           >
             <option value="">Select Playlist</option>
             {Object.keys(playlists).map((playlistName) => (

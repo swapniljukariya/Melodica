@@ -13,7 +13,7 @@ const LikedSongsPage = () => {
       {likedTracks.length === 0 ? (
         <p className="text-center text-xl">You haven't liked any songs yet!</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8">
           {likedTracks.map((track) => (
             <MusicCard
               key={track.id}

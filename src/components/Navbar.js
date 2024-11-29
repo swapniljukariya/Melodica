@@ -5,15 +5,27 @@ import { AiFillHeart } from 'react-icons/ai';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login state
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  return (
-    <header className="sticky  bg-gray-100 top-0 z-10  shadow-md">
-      <div className="max-w-full mx-auto flex items-center justify-between p-4">
+  const handleLoginLogout = () => {
+    if (isLoggedIn) {
+      // Handle logout logic (clear user data, tokens, etc.)
+      setIsLoggedIn(false);
+      alert('You have been logged out');
+    } else {
+      // Handle login logic
+      setIsLoggedIn(true);
+      alert('You are now logged in');
+    }
+  };
 
+  return (
+    <header className="sticky bg-gray-100 top-0 z-10 shadow-md">
+      <div className="max-w-full mx-auto flex items-center justify-between p-4">
         {/* Logo Section (Left) */}
         <div className="flex items-center pl-4">
           <img
@@ -46,7 +58,7 @@ const Navigation = () => {
             Playlists
           </NavLink>
           <NavLink
-            to="/about" 
+            to="/about"
             className={({ isActive }) =>
               `text-black font-semibold text-lg ${
                 isActive ? 'border-b-2 border-blue-500' : 'hover:text-blue-400 transition-all'
@@ -69,12 +81,12 @@ const Navigation = () => {
 
         {/* Right Section (Sign In and Liked Icon) */}
         <div className="flex items-center pr-4 space-x-4">
-          <NavLink
-            to="/sign-in"
+          <button
+            onClick={handleLoginLogout} // Login/Logout button
             className="hidden md:block text-black bg-red-600 h-12 w-24 p-2 rounded-md font-semibold text-lg text-center hover:text-blue-400 transition-all"
           >
-            Sign In
-          </NavLink>
+            {isLoggedIn ? 'Log Out' : 'Log In'} {/* Toggle button text */}
+          </button>
           <NavLink to="/liked-songs" className="hidden md:block">
             <AiFillHeart size={40} className="text-red-500 hover:text-red-600 transition-all" />
           </NavLink>
@@ -134,13 +146,12 @@ const Navigation = () => {
           >
             Premium
           </NavLink>
-          <NavLink
-            to="/sign-in"
+          <button
+            onClick={handleLoginLogout}
             className="block text-black font-semibold hover:text-blue-400"
-            onClick={toggleMenu}
           >
-            Sign In
-          </NavLink>
+            {isLoggedIn ? 'Log Out' : 'Log In'}
+          </button>
           <NavLink to="/liked-songs" className="block">
             <AiFillHeart className="text-red-500 text-2xl hover:text-red-600 transition-all mx-auto" />
           </NavLink>

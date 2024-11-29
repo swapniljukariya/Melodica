@@ -6,10 +6,8 @@ import PlaylistPage from './components/PlaylistPage';
 import PlaylistDetailsPage from './components/PlaylistDetail'; // New component for playlist details
 import LikedSongsPage from './components/LikedSongs';
 import AboutPage from './components/About'; // About Us page
-import SignInPage from './components/Signin'; // Sign In page
 import PremiumPage from './components/Premium'; // Premium page
 import ArtistList from './components/Artist'; // Artist list component
-import ArtistTracksPage from './components/ArtistTracks'; // Artist tracks page component
 import ErrorPage from './components/ErrorPage';
 import { AppProvider } from './Context/Globalstate'; // Global state provider
 
@@ -25,10 +23,9 @@ const App = () => {
         { path: 'playlist/:playlistName', element: <PlaylistDetailsPage /> },
         { path: 'liked-songs', element: <LikedSongsPage /> },
         { path: 'about', element: <AboutPage /> },
-        { path: 'signin', element: <SignInPage /> },
         { path: 'premium', element: <PremiumPage /> },
         { path: 'artists', element: <ArtistList /> },
-        { path: 'artist/:artistId', element: <ArtistTracksPage /> }, // Dynamic route
+        
       ],
     },
   ]);
