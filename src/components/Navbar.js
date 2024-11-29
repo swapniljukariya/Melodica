@@ -1,49 +1,153 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import melodica from '../img/Music App Icon.jpeg';
+import { AiFillHeart } from 'react-icons/ai';
 
-function Navbar({ search, setSearch, fetchTracks }) {
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  };
+const Navigation = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetchTracks();
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="45" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
-  <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
-  <path fill-rule="evenodd" d="M12 3v10h-1V3z"/>
-  <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z"/>
-  <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"/>
-</svg>
-        <Link className="navbar-brand" to="/">MusicApp</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/liked">Liked Songs</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/playlists">Playlists</Link>
-            </li>
-          </ul>
-          <form className="d-flex" onSubmit={handleSubmit}>
-            <input className="form-control me-2" type="search" placeholder="Search" value={search} onChange={handleSearch} />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header className="sticky  bg-gray-100 top-0 z-10  shadow-md">
+      <div className="max-w-full mx-auto flex items-center justify-between p-4">
+
+        {/* Logo Section (Left) */}
+        <div className="flex items-center pl-4">
+          <img
+            src={melodica}
+            alt="Logo"
+            className="h-24 w-24 rounded-full object-cover shadow-lg"
+          />
+        </div>
+
+        {/* Centered Navigation Links (Desktop) */}
+        <nav className="hidden md:flex flex-grow justify-center space-x-6">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-black font-semibold text-lg ${
+                isActive ? 'border-b-2 border-blue-500' : 'hover:text-blue-400 transition-all'
+              }`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/playlist"
+            className={({ isActive }) =>
+              `text-black font-semibold text-lg ${
+                isActive ? 'border-b-2 border-blue-500' : 'hover:text-blue-400 transition-all'
+              }`
+            }
+          >
+            Playlists
+          </NavLink>
+          <NavLink
+            to="/about" 
+            className={({ isActive }) =>
+              `text-black font-semibold text-lg ${
+                isActive ? 'border-b-2 border-blue-500' : 'hover:text-blue-400 transition-all'
+              }`
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/premium"
+            className={({ isActive }) =>
+              `text-black font-semibold text-lg ${
+                isActive ? 'border-b-2 border-blue-500' : 'hover:text-blue-400 transition-all'
+              }`
+            }
+          >
+            Premium
+          </NavLink>
+        </nav>
+
+        {/* Right Section (Sign In and Liked Icon) */}
+        <div className="flex items-center pr-4 space-x-4">
+          <NavLink
+            to="/sign-in"
+            className="hidden md:block text-black bg-red-600 h-12 w-24 p-2 rounded-md font-semibold text-lg text-center hover:text-blue-400 transition-all"
+          >
+            Sign In
+          </NavLink>
+          <NavLink to="/liked-songs" className="hidden md:block">
+            <AiFillHeart size={40} className="text-red-500 hover:text-red-600 transition-all" />
+          </NavLink>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden flex items-center justify-center p-2 rounded-md text-black focus:outline-none"
+            onClick={toggleMenu}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              className="w-6 h-6"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-    </nav>
-  );
-}
 
-export default Navbar;
+      {/* Mobile Navigation Links */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white p-4 space-y-4 shadow-md">
+          <NavLink
+            to="/"
+            className="block text-black font-semibold hover:text-blue-400"
+            onClick={toggleMenu}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/playlist"
+            className="block text-black font-semibold hover:text-blue-400"
+            onClick={toggleMenu}
+          >
+            Playlists
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="block text-black font-semibold hover:text-blue-400"
+            onClick={toggleMenu}
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/premium"
+            className="block text-black font-semibold hover:text-blue-400"
+            onClick={toggleMenu}
+          >
+            Premium
+          </NavLink>
+          <NavLink
+            to="/sign-in"
+            className="block text-black font-semibold hover:text-blue-400"
+            onClick={toggleMenu}
+          >
+            Sign In
+          </NavLink>
+          <NavLink to="/liked-songs" className="block">
+            <AiFillHeart className="text-red-500 text-2xl hover:text-red-600 transition-all mx-auto" />
+          </NavLink>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Navigation;

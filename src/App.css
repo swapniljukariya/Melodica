@@ -64,11 +64,17 @@ background-color: rgb(231, 231, 231);
   
 }
 .playlist{
-  height: 31vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  height: 33vh;
+  
 
 }
 .form-control{
   border: 1px solid black;
-  width: 10vw;
+  width: 30vw;
+
 
 }
