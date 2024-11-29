@@ -1,6 +1,5 @@
 {
-  "homepage": "https://swapniljukariya.github.io/React-Ringtone",
-  "name": "music.com",
+  "name": "Melodica",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,8 +47,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.1.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15"
-  }
+  },
+  "proxy": "http://localhost:5000"
+
 }
