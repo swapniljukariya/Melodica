@@ -9,7 +9,7 @@ const Artist = () => {
   const navigate = useNavigate();
 
   const API_URL =
-    'https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=bollywood&type=artist';
+    '/search?q=bollywood&type=artist';
 
   useEffect(() => {
     const fetchArtists = async () => {
@@ -25,6 +25,7 @@ const Artist = () => {
         setError(err.message);
         setLoading(false);
       }
+      
     };
 
     fetchArtists();
