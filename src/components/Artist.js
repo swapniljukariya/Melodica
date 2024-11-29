@@ -33,7 +33,7 @@ const Artist = () => {
 
   return (
     <div className="m-2 p-2">
-      <h1 className="text-center text-4xl font-extrabold mb-8">Top Bollywood Artists</h1>
+      <h1 className="text-center text-3xl font-extrabold mb-8">Top Bollywood Artists</h1>
       <div className="flex overflow-x-auto space-x-12 p-4">
         {artists.map((artist) => (
           <div
@@ -47,7 +47,7 @@ const Artist = () => {
             <img
               src={artist.images[0]?.url || 'https://via.placeholder.com/200'}
               alt={artist.name}
-              className="w-40 h-40 rounded-full object-cover shadow-xl"
+              className="w-36 h-36 rounded-full object-cover shadow-xl"
             />
             <p className="mt-4">{artist.name}</p>
           </div>

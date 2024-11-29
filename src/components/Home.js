@@ -110,7 +110,7 @@ const Home = () => {
       </div>
 
       {/* Tracks Section */}
-      <h1 className="text-center text-4xl font-extrabold mb-8">
+      <h1 className="text-center text-3xl font-extrabold mb-8">
         {isSearching ? `Search Results for "${query}"` : 'Trending Tracks in India'}
       </h1>
 
