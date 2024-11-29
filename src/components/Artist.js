@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ShimmerLoader from './ShimmerLoader'; // Import the shimmer loader component
 
 const Artist = () => {
   const [artists, setArtists] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // ensure this hook is imported
 
-  const API_URL =
-    '/search?q=bollywood&type=artist';
+  const API_URL = 'https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=bollywood&type=artist';
 
   useEffect(() => {
     const fetchArtists = async () => {
@@ -25,13 +23,12 @@ const Artist = () => {
         setError(err.message);
         setLoading(false);
       }
-      
     };
 
     fetchArtists();
   }, []);
 
-  if (loading) return <ShimmerLoader />; // Show shimmer while loading
+  if (loading) return <div className="text-center">Loading...</div>;
   if (error) return <div className="text-center text-red-500">Error: {error}</div>;
 
   return (
@@ -42,7 +39,10 @@ const Artist = () => {
           <div
             key={artist.id}
             className="flex-shrink-0 text-center cursor-pointer"
-            onClick={() => navigate(`/artist/${artist.id}`)}
+            onClick={() => {
+              console.log(`Navigating to /artist/${artist.id}`); // Debug line
+              navigate(`/artist/${artist.id}`);
+            }}
           >
             <img
               src={artist.images[0]?.url || 'https://via.placeholder.com/200'}
@@ -57,4 +57,4 @@ const Artist = () => {
   );
 };
 
-export default Artist;
+export default Artist; 
