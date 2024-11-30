@@ -8,6 +8,7 @@ import LikedSongsPage from './components/LikedSongs'; // Liked songs page
 import AboutPage from './components/About'; // About Us page
 import PremiumPage from './components/Premium'; // Premium subscription page
 import ArtistList from './components/Artist'; // List of artists
+import ArtistTracks from './components/ArtistTracks'; // Artist details page (new page)
 import ErrorPage from './components/ErrorPage'; // Error handling page
 import { AppProvider } from './Context/Globalstate'; // Global state provider
 import { ToastContainer } from 'react-toastify'; // Toast notifications
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutPage /> }, // About us page
       { path: 'premium', element: <PremiumPage /> }, // Premium features
       { path: 'artists', element: <ArtistList /> }, // List of artists
+      { path: 'artist/:id', element: <ArtistTracks /> }, // Artist details (new route for individual artist's tracks)
     ],
   },
 ]);

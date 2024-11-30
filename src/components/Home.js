@@ -2,36 +2,36 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MusicCard from './MusicCard';
 import { useAppContext } from '../Context/Globalstate'; // Import the context
-import ArtistList from './Artist';
+import ArtistList from './Artist'; // Component for displaying artists
 
 const Home = () => {
-  const { likedTracks, addToLikedTracks, removeFromLikedTracks } = useAppContext(); // Access the global state
+  const { likedTracks, addToLikedTracks, removeFromLikedTracks, addToPlaylist } = useAppContext(); // Access global state
   const [trendingTracks, setTrendingTracks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Search state
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
 
   const TRENDING_API_URL =
-    'https://v1.nocodeapi.com/swapniljukariya149/spotify/UHGSDlioaLkenoUb/search?q=trending&type=track';
+    'https://v1.nocodeapi.com/joy1234/spotify/uTmqICtNXxYRTCUc/search?q=trending&type=track';
 
   const SEARCH_API_URL = (query) =>
-    `https://v1.nocodeapi.com/swapniljukariya149/spotify/UHGSDlioaLkenoUb/search?q=${query}&type=track`;
+    `https://v1.nocodeapi.com/joy1234/spotify/uTmqICtNXxYRTCUc/search?q=${query}&type=track`;
 
-  // Fetch trending tracks
+  // Fetch trending tracks on component mount
   useEffect(() => {
     const fetchTrendingTracks = async () => {
       try {
+        setLoading(true); // Set loading to true when fetching data
         const response = await axios.get(TRENDING_API_URL);
         const tracks = response.data?.tracks?.items || [];
         setTrendingTracks(tracks);
       } catch (err) {
         setError('Failed to load trending tracks. Please try again later.');
       } finally {
-        setLoading(false);
+        setLoading(false); // Set loading to false after fetching
       }
     };
 
@@ -76,6 +76,11 @@ const Home = () => {
     }
   };
 
+  // Handle adding to playlist
+  const handleAddToPlaylist = (playlistName, track) => {
+    addToPlaylist(playlistName, track); // Add to the selected playlist
+  };
+
   // Render shimmer effect while loading
   if (loading) {
     return (
@@ -88,9 +93,11 @@ const Home = () => {
   }
 
   // Render error state
-  if (error) return <p className="text-center mt-8 text-red-500">{error}</p>;
+  if (error) {
+    return <p className="text-center mt-8 text-red-500">{error}</p>;
+  }
 
-  // Conditional rendering for trending or search results
+  // Determine which tracks to display (search results or trending tracks)
   const tracksToDisplay = isSearching ? searchResults : trendingTracks;
 
   return (
@@ -137,8 +144,9 @@ const Home = () => {
           <MusicCard
             key={track.id}
             track={track}
-            onLikeClick={handleLikeClick}
+            onLike={() => handleLikeClick(track)}
             isLiked={likedTracks.some((likedTrack) => likedTrack.id === track.id)}
+            onAddToPlaylist={handleAddToPlaylist} // Pass the function here
           />
         ))}
       </div>

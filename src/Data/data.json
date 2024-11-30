@@ -1,239 +1,434 @@
 {
-    "artists": [
-      {
-        "name": "Pritam",
-        "id": "pritam_001",
-        "pic": "https://example.com/images/pritam.jpg",
-        "tracks": [ "https://p.scdn.co/mp3-preview/8cc048532646abbfb4d8999318998858a6512e58?cid=d70d86f359464fa7813434cedffcc29e"
-
-    ]
-      },
-      {
-        "name": "Sachin-Jigar",
-        "id": "sachin_jigar_002",
-        "pic": "https://example.com/images/sachin_jigar.jpg",
-        "tracks": []
-      },
-      {
-        "name": "A.R. Rahman",
-        "id": "ar_rahman_003",
-        "pic": "https://example.com/images/ar_rahman.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Atif Aslam",
-        "id": "atif_aslam_004",
-        "pic": "https://example.com/images/atif_aslam.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Sonu Nigam",
-        "id": "sonu_nigam_005",
-        "pic": "https://example.com/images/sonu_nigam.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Udit Narayan",
-        "id": "udit_narayan_006",
-        "pic": "https://example.com/images/udit_narayan.jpg",
-        "tracks": []
-      },
-      {
-        "name": "KK",
-        "id": "kk_007",
-        "pic": "https://example.com/images/kk.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Shreya Ghoshal",
-        "id": "shreya_ghoshal_008",
-        "pic": "https://example.com/images/shreya_ghoshal.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Alka Yagnik",
-        "id": "alka_yagnik_009",
-        "pic": "https://example.com/images/alka_yagnik.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Arijit Singh",
-        "id": "bollywood_fm_010",
-        "pic": "https://i.scdn.co/image/ab6761610000f1785ba2d75eb08a2d672f9b69b7",
-        "tracks": [{
   "artists": [
+    {
+      "name": "Arijit Singh",
+      "id": "arijit_001",
+      "pic": "https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7",
+      "tracks": [
+        {
+          "name": "Sajni",
+          "release_date": "",
+          "img_url": "https://songlyricsexplain.com/wp-content/uploads/2024/10/o-sajni-re-lyrics-meaning-laapataa-ladies-arijit-singh.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/74556daea80817d8e2c167adc1d69ad030090846?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Satranga",
+          "release_date": "2016-10-28",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQio9XZtPWUCg2EoOXwAaBLX52qk7gyNarX3Q&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/7908c3512a17427dbb2747fda555aa84aedeef0d?cid=d70d86f359464fa7813434cedffcc29e%22"
+        },
+        {
+          "name": "Ve Kamleya",
+          "release_date": "2016-10-28",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQio9XZtPWUCg2EoOXwAaBLX52qk7gyNarX3Q&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/b054f14100aea12d6aa66be44ef761ec2891cf95?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "O Maahi",
+          "release_date": "2016-10-28",
+          "img_url":"https://i.ytimg.com/vi/_iUMHCEMYHI/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHOBYAC0AWKAgwIABABGHIgWSg4MA8=&rs=AOn4CLC58fUB_K-5Gm4i5hVxvRx64NhHzA",
+          "preview_url": "https://p.scdn.co/mp3-preview/e0e74d21c75bb154407b8365e8df62f656a534d6?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Tum se",
+          "release_date": "2016-10-28",
+          "img_url":"https://i1.sndcdn.com/artworks-tSTYvte3mYdarR3w-dkoxvQ-t500x500.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/8098e64d287b7aae0cf52ac9241c73b037b59b84?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Channa Mereya",
+          "release_date": "2016-10-28",
+          "img_url":"https://i.ytimg.com/vi/bzSTpdcs-EI/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/e4d6fccaabd120bdf046856af0c837ba2a1b096e?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "SubhanAllah",
+          "release_date": "2016-10-28",
+          "img_url":"https://i.ytimg.com/vi/eHy1iPl4Nc8/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/574713d677b225e188a5217ec14d9a1fe3c8d216?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Raanjhanaa",
+          "release_date": "2016-10-28",
+          "img_url":"https://images.ottplay.com/images/big/raanjhanaa-1718940829.jpeg?impolicy=ottplay-20210210&width=1200&height=675",
+          "preview_url": "https://p.scdn.co/mp3-preview/15f90f93a233c9563d073840c39d2296f0bc077c?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+
+        
+      ]
+    },
     {
       "name": "Pritam",
       "id": "pritam_001",
-      "pic": "https://example.com/images/pritam.jpg",
-      "tracks": []
+      "pic": "https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca",
+      "tracks": [
+        {
+          "name": "Dil Ibaadat",
+          "release_date": "2016-10-28",
+          "img_url":"https://i.ytimg.com/vi/xzUVPN68Ym4/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/e826204e38ff23fe52818d1cd230404ab1659d5f?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Phir Le Aya Dil",
+          "release_date": "2004-08-27",
+          "img_url":"https://i.ytimg.com/vi/2AO2Utn2eoU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOO_8eNDJE9pmGrbExIEHsZ-PJVQ",
+          "preview_url": "https://p.scdn.co/mp3-preview/2c4d6db2468c65c0b1ec1edb7b89789ea7bc4567?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Ye Tune Kya Kiya",
+          "release_date": "2004-08-27",
+          "img_url":"https://i.ytimg.com/vi/w9Qo6p4XsXE/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/15bae6265cd512ec4c182921afa158cd4b0b618e?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Ishq Wala Love",
+          "release_date": "2004-08-27",
+          "img_url":"https://i.ytimg.com/vi/N2cPyl83tkQ/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/8d534999bdad07dbd8159e533ef7ecf076b42246?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Ishq Wala Love",
+          "release_date": "2004-08-27",
+          "img_url":"https://i.ytimg.com/vi/N2cPyl83tkQ/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/8d534999bdad07dbd8159e533ef7ecf076b42246?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
     },
-    {
-      "name": "Sachin-Jigar",
-      "id": "sachin_jigar_002",
-      "pic": "https://example.com/images/sachin_jigar.jpg",
-      "tracks": []
-    },
+   
     {
       "name": "A.R. Rahman",
       "id": "ar_rahman_003",
-      "pic": "https://example.com/images/ar_rahman.jpg",
-      "tracks": []
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFYWz44jNiZRP_jBsg80l94p3txbxVDaAWA&s",
+      "tracks": [
+        {
+          "name": "Arima Arima",
+          "release_date": "NA",
+          "img_url":"https://i.ytimg.com/vi/5F3H9_pYpYg/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/829e72b4116827d7a719711fde29cc183ae2e57d?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+       ,
+       {
+        "name": "Tum Tak",
+        "release_date": "NA",
+        "img_url":"https://i.ytimg.com/vi/k09uvR5eUao/maxresdefault.jpg",
+        "preview_url": "https://p.scdn.co/mp3-preview/b139842db394eb6adf2d623b8138e914ea3802b9?cid=d70d86f359464fa7813434cedffcc29e"
+      } ,
+      {
+        "name": "Tere Bina",
+        "release_date": "NA",
+        "img_url":"https://i.ytimg.com/vi/9JDSGhhiOwI/maxresdefault.jpg",
+        "preview_url": "https://p.scdn.co/mp3-preview/fbe24dd1f71206c13ef9d80be7e29822571cb67f?cid=d70d86f359464fa7813434cedffcc29e"
+      },{
+        "name": "yennai Izhukkuthadi",
+        "release_date": "na",
+        "img_url":"https://i.scdn.co/image/ab67616d0000b273a3288b749195fb39e6e5ac2b",
+        "preview_url": "https://p.scdn.co/mp3-preview/f532569076181f5e7280f002a2ee3e63bac76d2d?cid=d70d86f359464fa7813434cedffcc29e"
+      }
+      ]
     },
     {
-      "name": "Atif Aslam",
-      "id": "atif_aslam_004",
-      "pic": "https://example.com/images/atif_aslam.jpg",
-      "tracks": []
+      "name":"Prateek Kuhad",
+      "id": "prateek_004",
+      "pic": "https://assets.telegraphindia.com/telegraph/2020/Jul/1594214388_ss_prateek-kuhad-8remachaudhary.jpg",
+      "tracks": [
+        {
+          "name": "CO2",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/U2SVCCENLjE/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/f0aad12d38cacdff0622dbb3863b75b7924951ec?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Iraaday",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/Qwm6BSGrOq0/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/6692bc18252380cf993f2169390bac538dc85902?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "All I Need",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/zrxQkZfbSlE/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXihFMA8=&rs=AOn4CLASOAUdEtWfcxZ_eX4kzNHtPIPo5Q",
+          "preview_url": "https://p.scdn.co/mp3-preview/2625725e5b85292b3c1968168e792aed32a1e995?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Cold/mess",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/J-DoZ2EYLfA/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/57848f969edfe55538647a29e8acc45ce9748876?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Kasoor",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXS5jvJ58TOFVuxQwssNopEnJYloDnPYRvYQ&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/62573b436e8c87d8ec0b165b4afde83e3301ed35?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "CO2-Acoustic",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/ZoNTyLiWrD0/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLDVeewHcmEh4NGPghbhhxsuYhqscQ",
+          "preview_url": "https://p.scdn.co/mp3-preview/de658b87b9ceb3298b6c398c4b17c7833e8802f6?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "CO2",
+          "release_date": "2008-11-25",
+          "img_url":"https://assets.telegraphindia.com/telegraph/2020/Jul/1594214388_ss_prateek-kuhad-8remachaudhary.jpg",
+          "preview_url": ""
+        }
+      ]
     },
     {
       "name": "Sonu Nigam",
-      "id": "sonu_nigam_005",
-      "pic": "https://example.com/images/sonu_nigam.jpg",
-      "tracks": []
+      "id": "sonu_005",
+      "pic": "https://i.scdn.co/image/ab6761610000e5ebbc959d7569618ec2af2210f5",
+      "tracks": [
+        {
+          "name": "Mere Dholna 3.0 (Sonu Nigam Version) [From \"Bhool Bhulaiyaa 3\"]",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuzq2Y6C5dzKLmJKjse7A8_BXCgEQ58fGJA&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/81c73f6f7e78c00c8c95fb7fef6893fd14324fbf?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Main Agar Kahoon",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/LwJKsuGs0-c/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/da6f63ef98b8be3e6f4747e235fa3eb6c4e7a2f9?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Koi Tumsa Nahin",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/hNm5on5V5CM/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/6f24a5929f3c50cfee64eaa0cb2278c0adc21455?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Tumse Milke Dil Ka",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/d_zaA4Dyc3Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAGbvTlpuzIaZ-yX2X_5Bp10-NIag",
+          "preview_url": "https://p.scdn.co/mp3-preview/cfa93771a5789c37858ee564973e3f9704d124f4?cid=d70d86f359464fa7813434cedffcc29e-"
+        },
+        {
+          "name": "Soniyo",
+          "release_date": "2008-11-25",
+          "img_url":"https://c.saavncdn.com/446/Soniyo-Version-2-0-Hindi-2019-20230308163609-500x500.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/c1cf3893866e59d143be311899f9b8a2940f03d2?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+        
+      ]
     },
     {
-      "name": "Udit Narayan",
-      "id": "udit_narayan_006",
-      "pic": "https://example.com/images/udit_narayan.jpg",
-      "tracks": []
+      "name": "shreya ghoshal",
+      "id": "shreya_007",
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXHrWvaE1ubq_Da_ZSgrzsyO7rxg9cszPIQ&s",
+      "tracks": [
+        {
+          "name": "Chhaila",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/5b2InmbY24Q/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/7eabe4f4d8d2e373650c064d76b2792956deb531?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Saathiya",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/2ibPLYwVM38/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCz3OVHV9muU4frEaII0T8Y-hcelA",
+          "preview_url": "https://p.scdn.co/mp3-preview/ed4efb3dad752a2a43bd80f7a77a7bff99fc3856?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Sunn Raha Hai",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/8gsLGu-oez8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCpBj7phuan85qj3z-mNRGj0xK1Zw",
+          "preview_url": "https://p.scdn.co/mp3-preview/c4ccf3f6f8604551a35c92748067547e643c9aaf?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Ye Ishq Hai",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/b_sCZbYyuO4/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/d517ca12c81260f0a1954d4f60e026e5a4b16e70?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Jadu Hai Nasha Hai - 2002",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHnWqvYo3lhjOVpd6CjqD7iJbJwN8mc_fABQ&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/bf9fd8fa5515b4bfd35bcba63830eee3208d88a1?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
     },
     {
-      "name": "KK",
-      "id": "kk_007",
-      "pic": "https://example.com/images/kk.jpg",
-      "tracks": []
+      "name": "Atif Aslam",
+      "id": "atif_aslam_008",
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG7wO5xMjNcnWKt0KzcuumKMSDeaKj38TQiQ&s",
+      "tracks": [
+        {
+          "name": "Jeene Laga Hoon",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRbKuQcP2OG2FO5mgRBpXAbtLWJahJIJhNw&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/0c9bcd390a7544249175eb1734c0a7b561032b39?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Dil Diyan Gallan",
+          "release_date": "2008-11-25",
+          "img_url":"https://s1.dmcdn.net/v/NpDN61RSKDFnaZoEv/x1080",
+          "preview_url": "https://p.scdn.co/mp3-preview/4d7e50d55dbc4c1a8129492c1470568b66063d52?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Pehli Nazar Mein",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/JBCx0QyP8VQ/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/17c7af1f363be99bdc7ed6921d6beda4e0db5d46?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "O Saathi",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/YuXLN23ZGQo/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/bb097ad9ef39431248c601681958444485192f34?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Tu Jaane Na",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR857aUKduLjf9GR7_1A6MXMfEf9SgXuFbc7g&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/f551291ca7cbdb13934db0686f17751a0be87438?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Jeena Jeena",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKW_yP3ZgAmEt4jWWj9P2rHYkeWtQSz98lIg&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/afb7764122c87e198df7d51e39d481254b86c33e?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
+    },
+
+    {
+      "name": "Sunidhi Chauhan",
+      "id": "sunidhi_003",
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_JWuH5220UTz-Ra8DKrzvLQGW5xky5g_2UQ&s",
+      "tracks": [
+        {
+          "name": "Darkhaast",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/LMnJp_dSdnw/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/45a28afaa4cc92a06f492713d83e739fa6078ca5?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Chhaila",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/5b2InmbY24Q/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/7eabe4f4d8d2e373650c064d76b2792956deb531?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        
+        {
+          "name": "Sheila Ki Jawani",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/ZTmF2v59CtI/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/adee6be45e8f192215f1296d7bcc5e20af91470f?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Beedi",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/XLJCtZK0x5M/hqdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/282aec8aab59245f5c72262a7b66eb207876189a?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Sajna Ve Sajna",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/2lGECcyTLio/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/84f6177c767e0af7bf83e7d8e835f48d7cd3c882?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
     },
     {
-      "name": "Shreya Ghoshal",
-      "id": "shreya_ghoshal_008",
-      "pic": "https://example.com/images/shreya_ghoshal.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Alka Yagnik",
-      "id": "alka_yagnik_009",
-      "pic": "https://example.com/images/alka_yagnik.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood FM",
-      "id": "bollywood_fm_010",
-      "pic": "https://example.com/images/bollywood_fm.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood",
-      "id": "bollywood_011",
-      "pic": "https://example.com/images/bollywood.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Song",
-      "id": "bollywood_song_012",
-      "pic": "https://example.com/images/bollywood_song.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Boys",
-      "id": "bollywood_boys_013",
-      "pic": "https://example.com/images/bollywood_boys.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Sped Up",
-      "id": "bollywood_sped_up_014",
-      "pic": "https://example.com/images/bollywood_sped_up.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Remix",
-      "id": "bollywood_remix_015",
-      "pic": "https://example.com/images/bollywood_remix.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Instrumentals",
-      "id": "bollywood_instrumentals_016",
-      "pic": "https://example.com/images/bollywood_instrumentals.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Wedding",
-      "id": "bollywood_wedding_017",
-      "pic": "https://example.com/images/bollywood_wedding.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Lofi",
-      "id": "bollywood_lofi_018",
-      "pic": "https://example.com/images/bollywood_lofi.jpg",
-      "tracks": []
-    },
-    {
-      "name": "Bollywood Slowed And Reverb",
-      "id": "bollywood_slowed_reverb_019",
-      "pic": "https://example.com/images/bollywood_slowed_reverb.jpg",
-      "tracks": []
+      "name": "Jubin Nautiyal",
+      "id": "jubin_003",
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA09o3siO3FXUmqUTmt683ecM5HE58fz5TEA&s",
+      "tracks": [
+        {
+          "name": "Humnava Mere",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDtY3aP6-eN430_zzndU42vWcDkG43gecdA&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/a06852a03bb308fe6e3c168cf9a6640caa0788c5?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Lut Gaye",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/xFP4_aqKY8U/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/c270861df709c8be4490ff8295346f21604a43af?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Taaron Ke Sheha",
+          "release_date": "2008-11-25",
+          "img_url":"https://c.saavncdn.com/439/Taaron-Ke-Shehar-Hindi-2020-20200920035507-500x500.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/c171ad0d61f7143cdeb2ea3cf888ddea786baf00?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Tum Hi Aana",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/RemShT6JAHw/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/47bb2d8c3d2ae94176d3775f4a003ba610dffd86?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Dil Galti Kar Baitha Hai",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/ypY0r9xUtME/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/077d4ab9ecc37bddd370cda256b1f9d572ae50e5?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
+    },{
+      "name": "rahat fateh ali khan",
+      "id": "rahat_003",
+      "pic": "https://i.scdn.co/image/ab6761610000e5ebac45eaf028dc58810df0f382",
+      "tracks": [
+        {
+          "name": "Aas Paas Khuda",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/PSc0-z8StoU/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/6f16c04e460935c37cd24cef4877d68b33a3e32a?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "halka-halka",
+          "release_date": "2008-11-25",
+          "img_url":"https://c.saavncdn.com/759/Halka-Halka-Hindi-2016-500x500.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/111f90af16b248b9a81e46609aaec64f6b00e200?cid=d70d86f359464fa7813434cedffcc29e"
+        }, {
+          "name": "Tere Mast Mast Do Nain",
+          "release_date": "2008-11-25",
+          "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fYr9DW_NzpSJ4vTt0coMK5WL8ie1Bnd4cw&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/1e5d6a95ab7d8d6c998f49cb005fa8dc8eabb60e?cid=d70d86f359464fa7813434cedffcc29e"
+        }, {
+          "name": "Dillagi",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/iCe_el15SIw/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/a47f0ad8984e25300f4fe1f89531590d4b61adba?cid=d70d86f359464fa7813434cedffcc29e"
+        },
+        {
+          "name": "Nit Khair Manga",
+          "release_date": "2008-11-25",
+          "img_url":"https://i.ytimg.com/vi/Y1ALvn_eWu0/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/011ac95755656641342bbaa8470d6f27e0d067ef?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
     }
+    ,
+    {
+      "name": "Amit Trivedi",
+      "id": "amit_003",
+      "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORHi58oI3pfoHWNxrNHbD0vv0AijaUPxQpA&s",
+      "tracks": [
+        {
+          "name": "Shauq",
+          "release_date": "2008-11-25",
+          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0FrBZouB6uZEkC1VRWzw2UsRWHx0KRrwjg&s",
+          "preview_url": "https://p.scdn.co/mp3-preview/c166f8cf4a9e13429fa20955262d70fea8ad728d?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Gal Mitthi Mitthi",
+          "release_date": "2008-11-25",
+          "img_url": "https://i.ytimg.com/vi/7oqyfTpHmZE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA2auDnlybsAY2_i4Vf2t-sR0oYyg",
+          "preview_url": "https://p.scdn.co/mp3-preview/b56219356c7a03d9d5f6045f1b5742da35096d37?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Jhalla Wallah",
+          "release_date": "2008-11-25",
+          "img_url": "https://i.ytimg.com/vi/fqjXS7X9_5s/maxresdefault.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/a10a6b4b88fd570432ba2caf7e0f8d3b5cebd17e?cid=d70d86f359464fa7813434cedffcc29e"
+        },{
+          "name": "Love You Zindagi",
+          "release_date": "2008-11-25",
+          "img_url": "https://c.saavncdn.com/494/Dear-Zindagi-Hindi-2016-500x500.jpg",
+          "preview_url": "https://p.scdn.co/mp3-preview/d0a12977244dc4a8aefb958435627a256e3572cc?cid=d70d86f359464fa7813434cedffcc29e"
+        }
+      ]
+    }
+
+
+    
   ]
 }
-]
-      },
-      {
-        "name": "Bollywood",
-        "id": "bollywood_011",
-        "pic": "https://example.com/images/bollywood.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Song",
-        "id": "bollywood_song_012",
-        "pic": "https://example.com/images/bollywood_song.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Boys",
-        "id": "bollywood_boys_013",
-        "pic": "https://example.com/images/bollywood_boys.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Sped Up",
-        "id": "bollywood_sped_up_014",
-        "pic": "https://example.com/images/bollywood_sped_up.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Remix",
-        "id": "bollywood_remix_015",
-        "pic": "https://example.com/images/bollywood_remix.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Instrumentals",
-        "id": "bollywood_instrumentals_016",
-        "pic": "https://example.com/images/bollywood_instrumentals.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Wedding",
-        "id": "bollywood_wedding_017",
-        "pic": "https://example.com/images/bollywood_wedding.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Lofi",
-        "id": "bollywood_lofi_018",
-        "pic": "https://example.com/images/bollywood_lofi.jpg",
-        "tracks": []
-      },
-      {
-        "name": "Bollywood Slowed And Reverb",
-        "id": "bollywood_slowed_reverb_019",
-        "pic": "https://example.com/images/bollywood_slowed_reverb.jpg",
-        "tracks": []
-      }
-    ]
-  }
-  
