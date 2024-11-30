@@ -28,11 +28,16 @@ const Navigation = () => {
       <div className="max-w-full mx-auto flex items-center justify-between p-4">
         {/* Logo Section (Left) */}
         <div className="flex items-center pl-4">
-          <img
-            src={melodica}
-            alt="Logo"
-            className="h-24 w-24 rounded-full object-cover shadow-lg"
-          />
+          <NavLink
+            to="/"
+            onClick={() => setIsMobileMenuOpen(false)} // Close mobile menu on logo click
+          >
+            <img
+              src={melodica}
+              alt="Logo"
+              className="h-24 w-24 rounded-full object-cover shadow-lg hover:opacity-80 transition-all"
+            />
+          </NavLink>
         </div>
 
         {/* Centered Navigation Links (Desktop) */}
@@ -121,28 +126,28 @@ const Navigation = () => {
           <NavLink
             to="/"
             className="block text-black font-semibold hover:text-blue-400"
-            onClick={toggleMenu}
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu
           >
             Home
           </NavLink>
           <NavLink
             to="/playlist"
             className="block text-black font-semibold hover:text-blue-400"
-            onClick={toggleMenu}
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu
           >
             Playlists
           </NavLink>
           <NavLink
             to="/about"
             className="block text-black font-semibold hover:text-blue-400"
-            onClick={toggleMenu}
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu
           >
             About Us
           </NavLink>
           <NavLink
             to="/premium"
             className="block text-black font-semibold hover:text-blue-400"
-            onClick={toggleMenu}
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu
           >
             Premium
           </NavLink>
@@ -152,7 +157,11 @@ const Navigation = () => {
           >
             {isLoggedIn ? 'Log Out' : 'Log In'}
           </button>
-          <NavLink to="/liked-songs" className="block">
+          <NavLink
+            to="/liked-songs"
+            className="block"
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu
+          >
             <AiFillHeart className="text-red-500 text-2xl hover:text-red-600 transition-all mx-auto" />
           </NavLink>
         </div>

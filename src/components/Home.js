@@ -16,10 +16,10 @@ const Home = () => {
   const [isSearching, setIsSearching] = useState(false);
 
   const TRENDING_API_URL =
-    'https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=trending&type=track';
+    'https://v1.nocodeapi.com/swapniljukariya149/spotify/UHGSDlioaLkenoUb/search?q=trending&type=track';
 
   const SEARCH_API_URL = (query) =>
-    `https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=${query}&type=track`;
+    `https://v1.nocodeapi.com/swapniljukariya149/spotify/UHGSDlioaLkenoUb/search?q=${query}&type=track`;
 
   // Fetch trending tracks
   useEffect(() => {
@@ -57,6 +57,13 @@ const Home = () => {
       setError('Failed to fetch search results. Please try again later.');
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Handle Enter key press for search
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch(); // Trigger search when Enter key is pressed
     }
   };
 
@@ -98,6 +105,7 @@ const Home = () => {
             placeholder="Search for a song, artist, or album..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyPress} // Listen for Enter key press
             className="w-full py-3 px-4 text-lg sm:text-base md:text-sm border border-gray-300 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 bg-gray-100 transition-all duration-300"
           />
           <button

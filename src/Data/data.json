@@ -1,0 +1,239 @@
+{
+    "artists": [
+      {
+        "name": "Pritam",
+        "id": "pritam_001",
+        "pic": "https://example.com/images/pritam.jpg",
+        "tracks": [ "https://p.scdn.co/mp3-preview/8cc048532646abbfb4d8999318998858a6512e58?cid=d70d86f359464fa7813434cedffcc29e"
+
+    ]
+      },
+      {
+        "name": "Sachin-Jigar",
+        "id": "sachin_jigar_002",
+        "pic": "https://example.com/images/sachin_jigar.jpg",
+        "tracks": []
+      },
+      {
+        "name": "A.R. Rahman",
+        "id": "ar_rahman_003",
+        "pic": "https://example.com/images/ar_rahman.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Atif Aslam",
+        "id": "atif_aslam_004",
+        "pic": "https://example.com/images/atif_aslam.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Sonu Nigam",
+        "id": "sonu_nigam_005",
+        "pic": "https://example.com/images/sonu_nigam.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Udit Narayan",
+        "id": "udit_narayan_006",
+        "pic": "https://example.com/images/udit_narayan.jpg",
+        "tracks": []
+      },
+      {
+        "name": "KK",
+        "id": "kk_007",
+        "pic": "https://example.com/images/kk.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Shreya Ghoshal",
+        "id": "shreya_ghoshal_008",
+        "pic": "https://example.com/images/shreya_ghoshal.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Alka Yagnik",
+        "id": "alka_yagnik_009",
+        "pic": "https://example.com/images/alka_yagnik.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Arijit Singh",
+        "id": "bollywood_fm_010",
+        "pic": "https://i.scdn.co/image/ab6761610000f1785ba2d75eb08a2d672f9b69b7",
+        "tracks": [{
+  "artists": [
+    {
+      "name": "Pritam",
+      "id": "pritam_001",
+      "pic": "https://example.com/images/pritam.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Sachin-Jigar",
+      "id": "sachin_jigar_002",
+      "pic": "https://example.com/images/sachin_jigar.jpg",
+      "tracks": []
+    },
+    {
+      "name": "A.R. Rahman",
+      "id": "ar_rahman_003",
+      "pic": "https://example.com/images/ar_rahman.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Atif Aslam",
+      "id": "atif_aslam_004",
+      "pic": "https://example.com/images/atif_aslam.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Sonu Nigam",
+      "id": "sonu_nigam_005",
+      "pic": "https://example.com/images/sonu_nigam.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Udit Narayan",
+      "id": "udit_narayan_006",
+      "pic": "https://example.com/images/udit_narayan.jpg",
+      "tracks": []
+    },
+    {
+      "name": "KK",
+      "id": "kk_007",
+      "pic": "https://example.com/images/kk.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Shreya Ghoshal",
+      "id": "shreya_ghoshal_008",
+      "pic": "https://example.com/images/shreya_ghoshal.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Alka Yagnik",
+      "id": "alka_yagnik_009",
+      "pic": "https://example.com/images/alka_yagnik.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood FM",
+      "id": "bollywood_fm_010",
+      "pic": "https://example.com/images/bollywood_fm.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood",
+      "id": "bollywood_011",
+      "pic": "https://example.com/images/bollywood.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Song",
+      "id": "bollywood_song_012",
+      "pic": "https://example.com/images/bollywood_song.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Boys",
+      "id": "bollywood_boys_013",
+      "pic": "https://example.com/images/bollywood_boys.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Sped Up",
+      "id": "bollywood_sped_up_014",
+      "pic": "https://example.com/images/bollywood_sped_up.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Remix",
+      "id": "bollywood_remix_015",
+      "pic": "https://example.com/images/bollywood_remix.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Instrumentals",
+      "id": "bollywood_instrumentals_016",
+      "pic": "https://example.com/images/bollywood_instrumentals.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Wedding",
+      "id": "bollywood_wedding_017",
+      "pic": "https://example.com/images/bollywood_wedding.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Lofi",
+      "id": "bollywood_lofi_018",
+      "pic": "https://example.com/images/bollywood_lofi.jpg",
+      "tracks": []
+    },
+    {
+      "name": "Bollywood Slowed And Reverb",
+      "id": "bollywood_slowed_reverb_019",
+      "pic": "https://example.com/images/bollywood_slowed_reverb.jpg",
+      "tracks": []
+    }
+  ]
+}
+]
+      },
+      {
+        "name": "Bollywood",
+        "id": "bollywood_011",
+        "pic": "https://example.com/images/bollywood.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Song",
+        "id": "bollywood_song_012",
+        "pic": "https://example.com/images/bollywood_song.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Boys",
+        "id": "bollywood_boys_013",
+        "pic": "https://example.com/images/bollywood_boys.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Sped Up",
+        "id": "bollywood_sped_up_014",
+        "pic": "https://example.com/images/bollywood_sped_up.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Remix",
+        "id": "bollywood_remix_015",
+        "pic": "https://example.com/images/bollywood_remix.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Instrumentals",
+        "id": "bollywood_instrumentals_016",
+        "pic": "https://example.com/images/bollywood_instrumentals.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Wedding",
+        "id": "bollywood_wedding_017",
+        "pic": "https://example.com/images/bollywood_wedding.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Lofi",
+        "id": "bollywood_lofi_018",
+        "pic": "https://example.com/images/bollywood_lofi.jpg",
+        "tracks": []
+      },
+      {
+        "name": "Bollywood Slowed And Reverb",
+        "id": "bollywood_slowed_reverb_019",
+        "pic": "https://example.com/images/bollywood_slowed_reverb.jpg",
+        "tracks": []
+      }
+    ]
+  }
+  

@@ -5,7 +5,8 @@ const Artist = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = 'https://v1.nocodeapi.com/aspharier/spotify/hkfutpVByrthFFIk/search?q=bollywood&type=artist';
+  const API_URL =
+    'https://v1.nocodeapi.com/swapniljukariya149/spotify/UHGSDlioaLkenoUb/search?q=bollywood&type=artist';
 
   useEffect(() => {
     const fetchArtists = async () => {
@@ -26,9 +27,32 @@ const Artist = () => {
     fetchArtists();
   }, []);
 
-  if (loading) return <div className="text-center">Loading...</div>;
-  if (error) return <div className="text-center text-red-500">Error: {error}</div>;
+  // Shimmer effect while loading
+  if (loading) {
+    return (
+      <div className="m-2 p-2">
+        <h1 className="text-center text-3xl font-extrabold mb-8">Top Bollywood Artists</h1>
+        <div className="flex overflow-x-auto space-x-12 p-4">
+          {[...Array(6)].map((_, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 text-center animate-pulse"
+            >
+              <div className="w-36 h-36 rounded-full bg-gray-300" />
+              <div className="mt-4 w-24 h-4 bg-gray-300 rounded" />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
+  // Render error state
+  if (error) {
+    return <div className="text-center text-red-500">Error: {error}</div>;
+  }
+
+  // Render artists when data is loaded
   return (
     <div className="m-2 p-2">
       <h1 className="text-center text-3xl font-extrabold mb-8">Top Bollywood Artists</h1>
@@ -37,10 +61,8 @@ const Artist = () => {
           <div
             key={artist.id}
             className="flex-shrink-0 text-center"
-            // Removed the onClick navigation to prevent routing
             onClick={() => {
-              // You can add custom functionality here for what should happen when an artist is clicked
-              console.log(`Artist clicked: ${artist.name}`); // Debug line
+              console.log(`Artist clicked: ${artist.name}`);
             }}
           >
             <img

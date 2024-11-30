@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppContext } from '../Context/Globalstate';
+import { MdDelete } from "react-icons/md";
 
 const PlaylistPage = () => {
   const { playlists, addToPlaylist, removeFromPlaylist } = useAppContext();
@@ -35,13 +36,13 @@ const PlaylistPage = () => {
   };
 
   return (
-    <div className="container bg-red-900 mx-auto p-4">
+    <div className="container bg-green-300 mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4 text-gray-800">Your Playlists</h1>
 
       {/* Create Playlist Button */}
       <button
         onClick={() => setIsCreatingPlaylist(!isCreatingPlaylist)}
-        className="mb-4 px-6 py-2 bg-green-500 text-white rounded-md"
+        className="mb-4 px-6 py-2 bg-red-500 text-white rounded-md"
       >
         {isCreatingPlaylist ? 'Cancel' : 'Create Playlist'}
       </button>
@@ -83,7 +84,8 @@ const PlaylistPage = () => {
               }}
               className="absolute top-2 right-2 text-red-500"
             >
-              🗑️
+              <MdDelete size={40} />
+
             </button>
           </div>
         ))}
