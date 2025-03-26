@@ -106,23 +106,23 @@ const Home = () => {
 
       {/* Search Section */}
       <div className="w-full p-4">
-        <div className="relative w-full max-w-4xl mx-auto">
-          <input
-            type="text"
-            placeholder="Search for a song, artist, or album..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={handleKeyPress} // Listen for Enter key press
-            className="w-full py-3 px-4 text-lg sm:text-base md:text-sm border border-gray-300 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 bg-gray-100 transition-all duration-300"
-          />
-          <button
-            onClick={handleSearch}
-            className="absolute right-0 top-0 bottom-0 px-8 sm:px-10 text-white bg-gradient-to-r from-red-600 to-orange-500 rounded-full hover:from-red-700 hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-blue-500 font-semibold h-full transition-all duration-300"
-          >
-            Search
-          </button>
-        </div>
-      </div>
+  <div className="relative w-full max-w-4xl mx-auto flex items-center gap-2 bg-gray-100 rounded-full shadow-lg border border-gray-300">
+    <input
+      type="text"
+      placeholder="Search for a song, artist, or album..."
+      value={query}
+      onChange={(e) => setQuery(e.target.value)}
+      onKeyDown={handleKeyPress} // Listen for Enter key press
+      className="flex-1 py-3 px-4 text-lg sm:text-base md:text-sm bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400"
+    />
+    <button
+      onClick={handleSearch}
+      className="px-6 sm:px-8 text-white bg-gradient-to-r from-red-600 to-orange-500 rounded-full hover:from-red-700 hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-blue-500 font-semibold h-12 transition-all duration-300"
+    >
+      Search
+    </button>
+  </div>
+</div>
 
       {/* Tracks Section */}
       <h1 className="text-center text-3xl font-extrabold mb-8">
