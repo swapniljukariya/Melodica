@@ -1,34 +1,36 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import LayoutWithoutSidebar from './components/LayoutWithoutSidebar'; // Layout with header and footer
-import HomePage from './components/Home'; // HomePage component
-import PlaylistPage from './components/PlaylistPage'; // All playlists page
-import PlaylistDetailsPage from './components/PlaylistDetail'; // Individual playlist details
-import LikedSongsPage from './components/LikedSongs'; // Liked songs page
-import AboutPage from './components/About'; // About Us page
-import PremiumPage from './components/Premium'; // Premium subscription page
-import ArtistList from './components/Artist'; // List of artists
-import ArtistTracks from './components/ArtistTracks'; // Artist details page (new page)
-import ErrorPage from './components/ErrorPage'; // Error handling page
-import { AppProvider } from './Context/Globalstate'; // Global state provider
-import { ToastContainer } from 'react-toastify'; // Toast notifications
-import 'react-toastify/dist/ReactToastify.css'; // Toast CSS
+import LayoutWithoutSidebar from './components/LayoutWithoutSidebar';
+import ErrorPage from './components/ErrorPage';
+import { AppProvider } from './Context/Globalstate';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import LoadingSpinner from './components/LoadingSpinner';
 
-// Define the routes for the application
+// Lazy-loaded components
+const HomePage = lazy(() => import('./components/Home'));
+const PlaylistPage = lazy(() => import('./components/PlaylistPage'));
+const PlaylistDetailsPage = lazy(() => import('./components/PlaylistDetail'));
+const LikedSongsPage = lazy(() => import('./components/LikedSongs'));
+const AboutPage = lazy(() => import('./components/About'));
+const PremiumPage = lazy(() => import('./components/Premium'));
+const ArtistList = lazy(() => import('./components/Artist'));
+const ArtistTracks = lazy(() => import('./components/ArtistTracks'));
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <LayoutWithoutSidebar />, // Main layout (with header and footer)
-    errorElement: <ErrorPage />, // Fallback UI for errors
+    element: <LayoutWithoutSidebar />,
+    errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> }, // Home page
-      { path: 'playlist', element: <PlaylistPage /> }, // List of all playlists
-      { path: 'playlist/:playlistName', element: <PlaylistDetailsPage /> }, // Playlist details by name
-      { path: 'liked-songs', element: <LikedSongsPage /> }, // Liked songs
-      { path: 'about', element: <AboutPage /> }, // About us page
-      { path: 'premium', element: <PremiumPage /> }, // Premium features
-      { path: 'artists', element: <ArtistList /> }, // List of artists
-      { path: 'artist/:id', element: <ArtistTracks /> }, // Artist details (new route for individual artist's tracks)
+      { path: '/', element: <Suspense fallback={<LoadingSpinner />}><HomePage /></Suspense> },
+      { path: 'playlist', element: <Suspense fallback={<LoadingSpinner />}><PlaylistPage /></Suspense> },
+      { path: 'playlist/:playlistName', element: <Suspense fallback={<LoadingSpinner />}><PlaylistDetailsPage /></Suspense> },
+      { path: 'liked-songs', element: <Suspense fallback={<LoadingSpinner />}><LikedSongsPage /></Suspense> },
+      { path: 'about', element: <Suspense fallback={<LoadingSpinner />}><AboutPage /></Suspense> },
+      { path: 'premium', element: <Suspense fallback={<LoadingSpinner />}><PremiumPage /></Suspense> },
+      { path: 'artists', element: <Suspense fallback={<LoadingSpinner />}><ArtistList /></Suspense> },
+      { path: 'artist/:id', element: <Suspense fallback={<LoadingSpinner />}><ArtistTracks /></Suspense> },
     ],
   },
 ]);
@@ -36,21 +38,8 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <AppProvider>
-      {/* Provide Router for navigation */}
       <RouterProvider router={router} />
-
-      {/* Toast container for notifications */}
-      <ToastContainer
-        position="top-right"
-        autoClose={3000} // Auto-close after 3 seconds
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark" // Options: 'light', 'dark', 'colored'
-      />
+      <ToastContainer position="top-right" autoClose={3000} theme="dark" />
     </AppProvider>
   );
 };
