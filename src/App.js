@@ -5,7 +5,8 @@ import ErrorPage from './components/ErrorPage';
 import { AppProvider } from './Context/Globalstate';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import LoadingSpinner from './components/LoadingSpinner';
+import LoadingSpinner from './LoadingSpinner';
+
 
 // Lazy-loaded components
 const HomePage = lazy(() => import('./components/Home'));
